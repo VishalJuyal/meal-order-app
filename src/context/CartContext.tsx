@@ -1,5 +1,5 @@
-// context/CartContext.tsx
-import React, { createContext, useReducer, ReactNode } from "react";
+"use client";
+import React, { createContext, useReducer, ReactNode, useContext } from "react";
 
 interface CartItem {
   img: string;
@@ -50,6 +50,14 @@ export const CartProvider: React.FC<CartProviderProps> = ({ children }) => {
       {children}
     </CartContext.Provider>
   );
+};
+
+export const useCart = (): CartContextType => {
+  const context = useContext(CartContext);
+  if (!context) {
+    throw new Error("useCart must be used within a CartProvider");
+  }
+  return context;
 };
 
 export default CartContext;
