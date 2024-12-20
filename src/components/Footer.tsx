@@ -1,6 +1,6 @@
 import React from "react";
-import { FaFacebookF, FaLinkedinIn } from "react-icons/fa";
-import { BsTwitter, BsPinterest } from "react-icons/bs";
+import { FaLinkedinIn, FaGithub } from "react-icons/fa";
+import { BsTwitter } from "react-icons/bs";
 
 const Footer = () => {
   return (
@@ -28,17 +28,35 @@ const Footer = () => {
 
         <div>
           <div className="flex gap-8 text-accent text-2xl pt-16">
-            <FaFacebookF />
-            <BsTwitter />
-            <BsPinterest />
-            <FaLinkedinIn />
+            <a
+              href="https://github.com/VishalJuyal"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="GitHub"
+            >
+              <FaGithub />
+            </a>
+            <a
+              href="https://x.com/VishalJuyal9"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Twitter"
+            >
+              <BsTwitter />
+            </a>
+            <a
+              href="https://www.linkedin.com/in/vishal-juyal-b1328a208"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="LinkedIn"
+            >
+              <FaLinkedinIn />
+            </a>
           </div>
         </div>
       </div>
 
-      <div className="w-fit mx-auto pt-16 pb-8 text-[14px] sm:text-[16px]">
-        &copy; Copyright 2023 All rights reserved
-      </div>
+      <div className="w-fit mx-auto pt-16 pb-8 text-[14px] sm:text-[16px]"></div>
     </div>
   );
 };

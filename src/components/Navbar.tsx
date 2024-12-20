@@ -22,9 +22,8 @@ const Navbar = () => {
         />
         <ul className="md:flex gap-8 items-center font-semibold text-[14px] hidden">
           <li onClick={() => router.push("/")}>Home</li>
-          <li>About</li>
-          <li>Food</li>
-          <li>Dish</li>
+          <li onClick={() => router.push("/")}>About</li>
+          <li onClick={() => router.push("/menu")}>Dish</li>
           <li>Contact</li>
           {/* <button className="bg-accent text-white px-6 py-2 rounded-3xl">
             SignUp

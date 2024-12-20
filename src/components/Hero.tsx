@@ -1,6 +1,5 @@
 import Image from "next/image";
 import React from "react";
-import Navbar from "./Navbar";
 
 const Hero = () => {
   return (
@@ -12,7 +11,6 @@ const Hero = () => {
         height={600}
         alt="hero_bg"
       />
-      <Navbar />
       <div className="container h-[calc(100vh-120px)] grid items-center">
         <div className="space-y-4 bg-[#ffffff98] w-fit p-4">
           <p className="uppercase font-medium">Wide options of choice</p>
